@@ -693,16 +693,12 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        <script>
-          var today = new Date();
-        </script>
-        Last Updated:
         <input type="text" id="currentDate">
 <!--         <br><br> -->
           <script>
             var today = new Date();
             var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-            document.getElementById("currentDate").value = date;
+            document.getElementById("currentDate").value = 'Last Updated:'+date;
           </script>
       </div>
       <div class="credits">
