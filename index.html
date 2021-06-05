@@ -698,10 +698,10 @@
         </script>
         Last Updated:
         <input type="text" id="currentDate">
-        <br><br>
+<!--         <br><br> -->
           <script>
             var today = new Date();
-            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
             document.getElementById("currentDate").value = date;
           </script>
       </div>
