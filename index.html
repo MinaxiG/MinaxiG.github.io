@@ -696,7 +696,14 @@
         <script>
           var today = new Date();
         </script>
-        Last Updated:<strong><span> today </span></strong>
+        Last Updated:
+        <input type="text" id="currentDate">
+        <br><br>
+          <script>
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            document.getElementById("currentDate").value = date;
+          </script>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
